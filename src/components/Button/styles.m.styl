@@ -1,0 +1,87 @@
+@import '../../common.styl'
+
+button($color)
+  display inline-flex
+  align-items center
+  justify-content center
+  color white
+  font-size 14px
+  font-weight 500
+  padding 0 15px
+  height 46px
+  border 1px solid
+  border-radius 8px
+  background $color
+  border-color $color
+  cursor pointer
+  transition background .2s, color .2s
+  min-width 46px
+
+  &.iconOnly
+    padding 0
+
+  &:hover
+    background darken($color, 10%)
+    border-color darken($color, 10%)
+
+  &:focus
+    outline none
+
+  span
+    margin 0 5px
+
+  svg 
+    fill currentColor
+    height 18px
+    margin 0 5px
+
+  &.resting
+    background alpha($color, 10%)
+    border-color alpha($color, 10%)
+    color $color
+
+    &:hover
+      background alpha($color, 20%)
+      border-color alpha($color, 20%)
+
+  &.outline
+    background transparent
+    border-color $color
+    color $color
+
+    &:hover
+      border-color $color
+      background transparent
+      color #1C1D21
+
+  &.disabled
+    background $background
+    border-color $background
+    color $primary-grey
+
+    &:hover
+      background $background
+      border-color $background
+      color $primary-grey
+  
+  &.small
+    height 36px
+    padding 0 10px
+
+    span, svg
+      margin 0 2.5px
+
+.brandButton
+  button($primary)
+
+.redButton
+  button($red)
+
+.greenButton
+  button($green)
+
+.yellowButton
+  button($yellow)
+
+.purpleButton
+  button($purple)

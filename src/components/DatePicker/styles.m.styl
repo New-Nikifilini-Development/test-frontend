@@ -1,0 +1,68 @@
+@import '../../common.styl'
+
+.wrapper
+  display flex
+  flex-direction column
+  justify-content center
+  border-radius 8px
+  overflow hidden
+  //position absolute
+  background white
+  width 100%
+  max-width 350px
+  box-shadow 0 6px 20px 1px alpha(#999BA8, 10%)
+  padding-bottom 12px
+
+.head
+  height 60px
+  background $background-light
+  display flex
+  align-items center
+  justify-content space-between
+  text-transform capitalize
+  padding 0 23px
+  font-weight 500
+
+  svg
+    height 1.3em
+    fill $primary-grey
+
+.week
+  display flex
+  justify-content center
+
+  .day
+    display inline-flex
+    width 32px
+    height 32px
+    margin 4px
+    justify-content center
+    align-items center
+    font-size 14px
+    font-weight 500
+    border-radius 6px
+    cursor pointer
+    border 1px solid transparent
+
+    &:hover
+      background alpha($primary, 10%)
+
+    &.selected
+      background $primary
+      border-color $primary
+      color white
+
+    &.today
+      border-color $primary
+
+    &.alien
+      color $primary-grey
+      font-weight 400
+
+  &.weekdays
+    .day
+      color $primary-grey
+      font-weight 400
+      &:hover
+        background transparent
+        cursor default

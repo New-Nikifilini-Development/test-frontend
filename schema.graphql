@@ -1,0 +1,68 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+    query: Query
+}
+
+type DeliveryType {
+    code: String!
+    name: String!
+}
+
+type Order {
+    createdAt: String!
+    delivery: OrderDelivery
+    id: Int!
+    items: [OrderItem]!
+    number: String!
+    site: String!
+    status: String!
+}
+
+type OrderDelivery {
+    code: String
+}
+
+type OrderItem {
+    comment: String!
+    id: Int!
+    offer: OrderItemOffer
+    quantity: Int!
+    status: String!
+}
+
+type OrderItemOffer {
+    article: String
+    displayName: String
+    externalId: String
+}
+
+type OrderStatus {
+    code: String!
+    name: String!
+}
+
+type OrdersResponse {
+    orders: [Order]!
+    pagination: Pagination!
+}
+
+type Pagination {
+    currentPage: Int!
+    limit: Int!
+    totalCount: Int!
+    totalPageCount: Int!
+}
+
+type ProductStatus {
+    code: String!
+    name: String!
+}
+
+type Query {
+    deliveryTypes: [DeliveryType]!
+    getOrders(page: Int): OrdersResponse!
+    order(number: String!): Order
+    orderStatuses: [OrderStatus]!
+    productStatuses: [ProductStatus]!
+}

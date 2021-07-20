@@ -1,0 +1,24 @@
+$primary = #5E81F4
+$primary-dark = #1C1D21
+$primary-grey = #8181A5
+
+$yellow = #F4BE5E
+$green = #7CE7AC
+$red = #FF808B
+$purple = #9698D6
+
+
+$background = #F6F6F6
+$background-light = #F5F5FA
+
+coolScrollbar()
+  &::-webkit-scrollbar
+    width 6px
+
+  &::-webkit-scrollbar-track
+    background alpha($background-light, 70%)
+
+  &::-webkit-scrollbar-thumb
+    background-color alpha($primary-grey, 80%)
+    border-radius 20px
+    border 3px solid transparent
