@@ -5444,6 +5444,13 @@ get-value@^2.0.3, get-value@^2.0.6:
   resolved "https://registry.yarnpkg.com/get-value/-/get-value-2.0.6.tgz#dc15ca1c672387ca76bd37ac0a395ba2042a2c28"
   integrity sha1-3BXKHGcjh8p2vTesCjlbogQqLCg=
 
+get-value@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/get-value/-/get-value-3.0.1.tgz#5efd2a157f1d6a516d7524e124ac52d0a39ef5a8"
+  integrity sha512-mKZj9JLQrwMBtj5wxi6MH8Z5eSKaERpAwjg43dPtlGI1ZVEgH/qC7T8/6R2OBSUA+zzHBZgICsVJaEIV2tKTDA==
+  dependencies:
+    isobject "^3.0.1"
+
 getpass@^0.1.1:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/getpass/-/getpass-0.1.7.tgz#5eff8e3e684d569ae4cb2b1282604e8ba62149fa"
@@ -5880,6 +5887,14 @@ human-signals@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-1.1.1.tgz#c5b1cd14f50aeae09ab6c59fe63ba3395fe4dfa3"
   integrity sha512-SEQu7vl8KjNL2eoGBLF3+wAjpsNfA9XMlXAYj/3EdaNfAlxKthD1xjEQfGOUhllCGGJVNY34bRr6lPINhNjyZw==
+
+i18nano@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/i18nano/-/i18nano-2.0.0.tgz#754c222b07701fbbc12871f28bed547c1aa44e87"
+  integrity sha512-QQOKD/cQlAWdzHcyol5yaZzUCKF1EfLgln8LyS29OYvcdhVjP/1NVgWrhDkI4Pk3I6bdPmTmS6DNf95cagS6tQ==
+  dependencies:
+    get-value "^3.0.1"
+    suspend-react "^0.0.8"
 
 iconv-lite@0.4.24:
   version "0.4.24"
@@ -7614,6 +7629,11 @@ mobx-react-lite@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/mobx-react-lite/-/mobx-react-lite-3.2.0.tgz#331d7365a6b053378dfe9c087315b4e41c5df69f"
   integrity sha512-q5+UHIqYCOpBoFm/PElDuOhbcatvTllgRp3M1s+Hp5j0Z6XNgDbgqxawJ0ZAUEyKM8X1zs70PCuhAIzX1f4Q/g==
+
+mobx-react-router@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/mobx-react-router/-/mobx-react-router-4.1.0.tgz#de014848207d8aa32f6a4e67ed861bd2cb6516e5"
+  integrity sha512-2knsbDqVorWLngZWbdO8tr7xcZXaLpVFsFlCaGaoyZ+EP9erVGRxnlWGqKyFObs3EH1JPLyTDOJ2LPTxb/lB6Q==
 
 mobx@^6.1.8:
   version "6.3.0"
@@ -10790,6 +10810,11 @@ supports-hyperlinks@^2.0.0:
   dependencies:
     has-flag "^4.0.0"
     supports-color "^7.0.0"
+
+suspend-react@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/suspend-react/-/suspend-react-0.0.8.tgz#b0740c1386b4eb652f17affe4339915ee268bd31"
+  integrity sha512-ZC3r8Hu1y0dIThzsGw0RLZplnX9yXwfItcvaIzJc2VQVi8TGyGDlu92syMB5ulybfvGLHAI5Ghzlk23UBPF8xg==
 
 svg-parser@^2.0.2:
   version "2.0.4"

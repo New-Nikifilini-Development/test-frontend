@@ -1,5 +1,16 @@
 export type StringBool = "true" | "false";
 
+export type IOrderItem = {
+  id: number;
+  quantity: number;
+  status: string;
+  offer: {
+    article?: string;
+    displayName: string;
+    externalId?: string;
+  }
+}
+
 export type OrdersListItem = {
   id: number;
   number: number;
@@ -9,6 +20,7 @@ export type OrdersListItem = {
     code: string;
   };
   status: string;
+  items: IOrderItem[],
   customFields?: {
     packing_status: StringBool;
     packing_count: number;

@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { GlobalStateProvider, GlobalState } from "~/screens/globalState";
 import OrdersShow from "~/screens/Orders/Show";
 
+
 function Index(): JSX.Element {
   const [globalState] = React.useState(new GlobalState());
   if (window.location.pathname === "/") window.location.pathname = "/orders/";

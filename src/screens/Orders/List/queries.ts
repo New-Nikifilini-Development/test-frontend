@@ -1,17 +1,28 @@
-import { gql } from "@apollo/client";
+import { gql } from '@apollo/client';
 
 export const GET_ORDERS_QUERY = gql`
-  query Orders($page: Int) {
-    getOrders(page: $page) {
+  query {
+    getAllOrders  {
       orders {
         id
         number
-        site
         createdAt
+        status
         delivery {
           code
         }
-        status
+        items {
+          id
+          status
+          quantity
+          offer {
+            externalId
+            displayName
+            article
+          }
+        }
+        site
+        orderType
       }
       pagination {
         limit
@@ -22,3 +33,26 @@ export const GET_ORDERS_QUERY = gql`
     }
   }
 `;
+
+// export const GET_ORDERS_QUERY = gql`
+//   query Orders($page: Int) {
+//     getAllOrders(page: $page) {
+//       orders {
+//         id
+//         number
+//         site
+//         createdAt
+//         delivery {
+//           code
+//         }
+//         status
+//       }
+//       pagination {
+//         limit
+//         totalCount
+//         currentPage
+//         totalPageCount
+//       }
+//     }
+//   }
+// `;

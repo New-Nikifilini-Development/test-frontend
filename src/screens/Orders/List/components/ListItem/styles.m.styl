@@ -1,17 +1,28 @@
 @import '../../../../../common.styl'
 
-.row
+.container
   min-height 64px
+  display flex
+  gap 20px 
+.mainInfo
+  display flex
+  flex-direction column
+  flex 1 0 200px;
+  gap 14px
+  background-color white
+  padding 16px
+  border-radius 10px
+  max-width: 200px
+  box-shadow 2px 2px 8px rgba(214, 211, 211, 0.541) 
 
-  div
-    display flex
-    align-items center
-
-    div
-      width 80%
-
-    &:last-child div
-      width 100%
+.items
+  width 100%
+  box-shadow 2px 2px 8px rgba(214, 211, 211, 0.541) 
+  background-color white
+  padding 16px
+  border-radius 10px
+  display flex
+  gap 20px
 
 .orderNumber
   font-weight 500
