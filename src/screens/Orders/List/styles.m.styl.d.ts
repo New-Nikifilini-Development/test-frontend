@@ -1,5 +1,8 @@
 declare namespace StylesMStylNamespace {
   export interface IStylesMStyl {
+    orders: string;
+    page: string;
+    pagination: string;
     screen: string;
   }
 }

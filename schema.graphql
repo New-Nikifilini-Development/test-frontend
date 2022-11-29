@@ -15,7 +15,7 @@ type Order {
     id: Int!
     items: [OrderItem]!
     number: String!
-    site: String!
+    site: String
     status: String!
 }
 

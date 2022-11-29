@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import App from './components/App'
 import reportWebVitals from './reportWebVitals'
+import client from './api/gql'
+import { Provider } from 'urql'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider value={client}>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </Provider>
+  ,document.getElementById('root')
 )
 
 // If you want to start measuring performance in your app, pass a function

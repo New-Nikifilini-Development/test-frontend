@@ -1,7 +1,9 @@
 declare namespace StylesMStylNamespace {
   export interface IStylesMStyl {
+    container: string;
+    items: string;
+    mainInfo: string;
     orderNumber: string;
-    row: string;
   }
 }
 
